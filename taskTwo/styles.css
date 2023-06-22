@@ -1,3 +1,5 @@
+/* SECTION1 */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body {
     color: white;
 }
 
-ul {
+.firstlist {
     list-style: none; 
     display: flex;
 }
@@ -17,9 +19,10 @@ a {
     text-decoration: none;
     color: white;
 }
-li {
+.firstlist li {
     margin: 10px
 }
+
 .link:hover {
     color:rgb(210, 162, 72);
 }
@@ -51,8 +54,14 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 20px 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-
+.menu {
+    position: fixed;
+    right: 3%;
+}
 
 img {
     width: 230px;
@@ -88,4 +97,123 @@ h1 {
 .description {
     text-align: center;
     margin-top: 10px;
+}
+
+/* SECTION2 */
+.secondwrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.phase1 {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.update {
+    width: 50%;
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.notification {
+    color: rgb(210, 162, 72);
+    font-weight: bold;
+    font-size: 30;
+    margin-bottom: 20px;
+}
+.input {
+    width: 50%;
+    margin: 100px;
+    margin-top: 130px;
+}
+.textinput {
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 250px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+.subscribe {
+   width: 400px; 
+   height: 35px;
+   display: flex;
+   align-items: center;
+}
+.updatebutton {
+    color: black;
+    background-color: rgb(210, 162, 72);
+    border: none;
+    height: 100%;
+    width: 100px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.phase2 {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.subphase2 {
+    display: flex;
+    gap: 100px;
+}
+
+a:not(.link) {
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+    line-height: 2; 
+}
+
+
+.install-button {
+    background-color: black;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 5px 10px;
+}
+.icon p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottomlist {
+    text-align: left;
+}
+.icon {
+    display: flex;
+    gap: 5px;
+}
+
+
+.subheading {
+    font-size: 17px;
+    margin-bottom: 7px;
+}  
+.installapp {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.list  {
+    list-style: none;
+}
+
+span {
+    font-size: 16px;
+    font-weight: bold;
 }
